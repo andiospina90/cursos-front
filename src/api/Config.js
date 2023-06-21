@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost/prueba/public/api/'; // Reemplaza con tu URL base de la API
+const BASE_URL = 'https://cursos.fly.dev/api/'; // Reemplaza con tu URL base de la API
+//const BASE_URL = 'http://localhost/prueba/public/api/'; // Reemplaza con tu URL base de la API
 
 const api = axios.create({
   baseURL: BASE_URL,
