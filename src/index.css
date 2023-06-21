@@ -1,0 +1,79 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #333;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+.Menu {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.Menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu ul li {
+  display: inline-block;
+}
+
+.Menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estilos para los submenús */
+.Submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.Submenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Submenu ul li {
+  display: block;
+}
+
+.Submenu ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Mostrar submenús al pasar el ratón */
+.Menu ul li:hover .Submenu {
+  display: block;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Opcional: ajusta la altura a tu preferencia */
+}
+
+.App-body {
+  flex-grow: 1;
+}

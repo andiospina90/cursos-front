@@ -1,0 +1,8 @@
+#root{
+  width: 100%;
+}
+
+.App-body {
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  background-color: #ffffff; /* Fondo blanco */
+}
